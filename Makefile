@@ -1,4 +1,4 @@
-cc=g++
+CC=g++
 
 output: main.o
 	$(CC) main.o -o output
