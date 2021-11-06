@@ -10,7 +10,7 @@
 ## Results
 
 ```
->./output --all -h
+>./output --all -h -j
 Parameters list:
 -a or --all
 -e or --echo
@@ -39,7 +39,6 @@ Parameters list:
 -h or --help
 -j or --just-do-it
 -s or --save
-
 ```
 
 ```
