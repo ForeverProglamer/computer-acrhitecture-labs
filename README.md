@@ -6,3 +6,4 @@ Labs:
 - [Laboratory work №2](https://github.com/ForeverProglamer/computer-architecture-labs/tree/lab2)
 - [Laboratory work №3](https://github.com/ForeverProglamer/computer-architecture-labs/tree/lab3)
 - [Laboratory work №4](https://github.com/ForeverProglamer/computer-architecture-labs/tree/lab4)
+- [Laboratory work №5](https://github.com/ForeverProglamer/computer-architecture-labs/tree/lab5)
