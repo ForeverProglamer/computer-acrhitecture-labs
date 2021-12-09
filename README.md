@@ -10,7 +10,7 @@
 
 ## insmod default
 
-![](./images/default.png)
+![](./images/default par.png)
 
 ## insmod amount=0
 
