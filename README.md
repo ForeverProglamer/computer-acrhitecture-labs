@@ -1,8 +1,26 @@
-# computer-acrhitecture-labs
-Repo for Computer Acrhitecture 2 laboratory works
+# Lab5
 
-Labs:
-- [Laboratory work №1](https://github.com/ForeverProglamer/computer-acrhitecture-labs/tree/lab1)
-- [Laboratory work №2](https://github.com/ForeverProglamer/computer-architecture-labs/tree/lab2)
-- [Laboratory work №3](https://github.com/ForeverProglamer/computer-architecture-labs/tree/lab3)
-- [Laboratory work №4](https://github.com/ForeverProglamer/computer-architecture-labs/tree/lab4)
+## Запуск
+
+![](./images/start.png)
+
+## modinfo
+
+![](./images/modinfo.png)
+
+## insmod default
+
+![](./images/default.png)
+
+## insmod amount=0
+
+![](./images/amount0.png)
+
+## insmod amount in range [5, 10]
+
+![](./images/amount7.png)
+
+## insmod amount=100
+
+![](./images/amount100.png)
+
