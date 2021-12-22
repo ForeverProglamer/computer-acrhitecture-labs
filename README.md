@@ -1,26 +1,9 @@
-# Lab5
+# Lab6
 
-## Запуск
+## insmod main.ko amount=8 (var_1 == NULL при i = 8):
+![](./images/screen1.png)
 
-![](./images/start.png)
+![](./images/screen2.png)
 
-## modinfo
-
-![](./images/modinfo.png)
-
-## insmod default
-
-![](./images/default.png)
-
-## insmod amount=0
-
-![](./images/amount0.png)
-
-## insmod amount in range [5, 10]
-
-![](./images/amount7.png)
-
-## insmod amount=100
-
-![](./images/amount100.png)
-
+## Запуск objdump:
+![](./images/screen3.png)

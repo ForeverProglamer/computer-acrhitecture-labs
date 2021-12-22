@@ -10,7 +10,7 @@ struct head_list {
 };
 
 MODULE_AUTHOR("Chernykh Bogdan IV-91");
-MODULE_DESCRIPTION("AK2 Lab5");
+MODULE_DESCRIPTION("AK2 Lab6");
 MODULE_LICENSE("Dual BSD/GPL");
 
 static struct head_list *head;
@@ -19,7 +19,8 @@ static int amount = 1;
 module_param(amount, uint, 0444);
 MODULE_PARM_DESC(amount, "Quantity of 'Hello world!'");
 
-static int __init helloinit(void) {
+static int __init helloinit(void)
+{
 	uint i;
 
 	struct head_list *var_1, *var_2;
@@ -31,13 +32,13 @@ static int __init helloinit(void) {
 		pr_warn("Parameter you entered equal to 0");
 	} else if (amount >= 5 && amount <= 10) {
 		pr_warn("Parameter you entered in range [5, 10]");
-	} else if (amount > 10) {
-		pr_warn("Parameter you entered is bigger than 10");
-	return -EINVAL;
 	}
+	
+	BUG_ON (amount > 10);
 
 	for (i = 0; i < amount; i++) {
 		var_1->next = kmalloc(sizeof(struct head_list), GFP_KERNEL);
+		if(i == 8) var_1 = NULL;
 		var_1->time = ktime_get();
 		pr_info("Hello World!");
 		var_2 = var_1;
@@ -54,7 +55,8 @@ static int __init helloinit(void) {
 	return 0;
 }
 
-static void __exit helloexit(void) {
+static void __exit helloexit(void)
+{
 	struct head_list *var;
 
 	while (head != NULL && amount != 0) {
