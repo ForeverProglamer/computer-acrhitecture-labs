@@ -33,7 +33,7 @@ static int __init helloinit(void) {
 		pr_warn("Parameter you entered in range [5, 10]");
 	} else if (amount > 10) {
 		pr_warn("Parameter you entered is bigger than 10");
-	return -EINVAL;
+		return -EINVAL;
 	}
 
 	for (i = 0; i < amount; i++) {
